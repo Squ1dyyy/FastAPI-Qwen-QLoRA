@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Environment & Local Databases
+.env
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Fine-tuning cache & heavy binary adapter weights (educational metrics & configs are kept)
+fastapi_qlora/cache/
+fastapi_qlora/output/**/*.safetensors
+fastapi_qlora/output/**/*.bin
+fastapi_qlora/output/**/*.pt
+fastapi_qlora/output/**/optimizer.pt
+fastapi_qlora/output/**/scheduler.pt
+fastapi_qlora/output/**/rng_state.pth
+fastapi_qlora/output/**/tokenizer.json
+fastapi_qlora/output/**/vocab.json
+fastapi_qlora/output/**/merges.txt

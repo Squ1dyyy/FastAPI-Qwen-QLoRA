@@ -1,0 +1,53 @@
+{
+  "model_info": {
+    "model_name": "Qwen/Qwen2.5-0.5B",
+    "compute_dtype": "torch.bfloat16",
+    "attn_implementation": "sdpa",
+    "use_4bit_nf4": true,
+    "double_quant": true,
+    "use_rslora": true,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "trainable_params": 8798208,
+    "all_params": 502830976,
+    "trainable_pct": 1.7497,
+    "ram_before_mb": 683.98,
+    "ram_after_load_mb": 973.41,
+    "vram_after_load": {
+      "allocated_mb": 469.85,
+      "reserved_mb": 534.0,
+      "peak_allocated_mb": 472.0
+    }
+  },
+  "dataset_stats": {
+    "raw_chunks_scanned": 2236,
+    "qualifying_chunks": 2094,
+    "total_tokens": 1117481,
+    "train_items": 2081,
+    "val_items": 101,
+    "sequence_packing": true,
+    "max_seq_length": 512
+  },
+  "train_metrics": {
+    "train_runtime": 498.4876,
+    "train_samples_per_second": 4.175,
+    "train_steps_per_second": 0.263,
+    "total_flos": 2344227968778240.0,
+    "train_loss": 1.6293955263290696,
+    "epoch": 1.0,
+    "eval_loss": 0.2740151286125183,
+    "train_runtime_sec": 498.84,
+    "total_wall_sec": 954.25,
+    "effective_tokens_per_sec": 2135.92
+  },
+  "memory_stats": {
+    "peak_vram": {
+      "allocated_mb": 503.86,
+      "reserved_mb": 2088.0,
+      "peak_allocated_mb": 1524.01
+    },
+    "process_ram_mb": 1834.56
+  },
+  "adapter_output_dir": "fastapi_qlora/output/qwen2.5-0.5b-fastapi-lora"
+}
